@@ -3,55 +3,99 @@
 <head>
 	<title>Postres</title>
 	<style>
-		table{
-			font-family: Lucida Calligraphy;
-			border-collapse: collapse;
-			width: 40%
-		}
-		td, th{
-			border: 1px solid width;
-			text-align: center;
-			padding: 8px;
-		}
+		
 
 	</style>
 </head>
 <body background="47.jpg">
-<table align="center" width="80%" border="1">
 		<img border="0" src="logo.png" width="10%" height="10%" onClick="history.back()">
-	<caption align="top"><b><h1>POSTRES</h1></b></caption>
-	<br>
-	<tr>
-		<td><b><h2>Nombre</h2></b></td>
-		<td><b><h2>Precio</h2></b></td>
-		<td><b><h2>Imagen</h2></b></td>
-		</tr>
 
-		<tr>
-			<td> Brochetas de Fresa</td>
-			<td> $50.00</td>
-			<td><img src="E:\proyecto\Postres\Brochetas de Fresa.jpg" align="center" width="50%"></td>
-		</tr>
-		<tr>
-			<td>Carlota</td>
-			<td> $50.00</td>
-			<td><img src="E:\proyecto\Postres\Carlota.jpg" align="center" width="50%"></td>
-		</tr>
-		<tr>
-			<td>Flan</td>
-			<td> $50.00</td>
-			<td><img src="E:\proyecto\Postres\Flan.jpg" align="center"></td>
-		</tr>
-		<tr>
-			<td>Helado</td>
-			<td> $50.00</td>
-			<td><img src="E:\proyecto\Postres\Helado.jpg" align="center" width="50%"></td>
-		</tr>
-		<tr>
-			<td>Pay</td>
-			<td> $50.00</td>
-			<td><img src="E:\proyecto\Postres\Pay.JPG" align="center"></td>
-		</tr>
-</table>
+<div class="w3-container w3-black">
+      <h1>ESPECIALIDAD DE LA CASA</h1>
+    </div>
+ <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Brochetas de Fresa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$45.50</span></h1>
+      <p class="w3-text-grey"> Hechas 100% natural</p>
+      <hr>
+   
+      <h1><b>Carlota</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$40.00</span></h1>
+      <p class="w3-text-grey">Hecho de galletas marías con crema de limón</p>
+      <hr>
+      
+      <h1><b>Flan</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$47.00</span></h1>
+      <p class="w3-text-grey">Flan de vainilla o Flan de mamey</p>
+      <hr>
+
+      <h1><b>Helado</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$36.50</span></h1>
+      <p class="w3-text-grey">Chocolate, vainilla, galleta</p>
+      <hr>
+
+      <h1><b>Pay</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$40.00</span></h1>
+      <p class="w3-text-grey">Pay de queso</p>
+      <hr>
+
+    </div>
+</div>
+<div class="slidehow-container">
+	<div class="mySlides fade">
+		<div class="imgprin">
+			<img src="E:\proyecto\Postres\Pay.JPG">
+		</div>
+		<div class="centrado">Pay</div>
+	</div>
+	<div class="mySlides fade">
+		<div class="imgprin">
+			<img src="E:\proyecto\Postres\Helado.jpg">
+		</div>
+		<div class="des">Helado</div>
+	</div>
+	<div class="mySlides fade">
+		<div class="imgprin">
+			<img src="E:\proyecto\Postres\Flan.jpg">
+		</div>
+		<div class="des">Flan</div>
+	</div>
+	<div class="mySlides fade">
+		<div class="imgprin">
+			<img src="E:\proyecto\Postres\Carlota.jpg">
+		</div>
+		<div class="des">Carlota</div>
+	</div>
+	<div class="mySlides fade">
+		<div class="imgprin">
+			<img src="E:\proyecto\Postres\Brochetas de Fresa.jpg">
+		</div>
+		<div class="des">Brochetas de Fresa</div>
+	</div>
+	<div style="text-align: center;">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+</div>
+<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides(){
+		var 1;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementByClassName("dot");
+		for (var i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}
+			for (var i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 8000);
+	}
+</script>
+	<footer><nav class="p">
+			<h2>Contactanos en costillastlahuishili@gmail.com</h2>
+		</nav></footer>
 </body>
 </html>
