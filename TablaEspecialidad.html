@@ -3,55 +3,106 @@
 <head>
 	<title>Especialidad</title>
 	<style>
-		table{
-			font-family: Lucida Calligraphy;
-			border-collapse: collapse;
-			width: 40%
+		.imgprin{
+			position: absolute;
+			top: 23%;
+			left: 26%;
 		}
-		td, th{
-			border: 1px solid width;
-			text-align: center;
-			padding: 8px;
+		.des{
+			position: absolute;
+			top: 40%;
+			left: 39%;
+			margin-left: 10%;
+			color: white;
+			font-size: 250%;
+			width: 70%;
 		}
-
 	</style>
 </head>
 <body background="52.jpg">
 	<img border="0" src="logo.png" width="10%" height="10%" onClick="history.back()">
-<table align="center" width="80%" border="1">
-	<caption align="top"><b><h1>ESPECIALIDAD DE LA CASA</h1></b></caption>
-	<br>
-	<tr>
-		<td><b><h2>Nombre</h2></b></td>
-		<td><b><h2>Precio</h2></b></td>
-		<td><b><h2>Imagen</h2></b></td>
-		</tr>
+<div class="w3-container w3-black">
+      <h1>ESPECIALIDAD DE LA CASA</h1>
+    </div>
+ <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Costillas de cerdo glaseadas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$170.50</span></h1>
+      <p class="w3-text-grey">Costillas glaseadas de mermelada de guayaba 100% natual al horno</p>
+      <hr>
+   
+      <h1><b>Costillas al horno</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$140.00</span></h1>
+      <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr>
+      
+      <h1><b>Costillas braseadas con Champiñones</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$167.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+      <hr>
 
-		<tr>
-			<td> Costillas de cerdo glaseadas con mermelada de guayaba</td>
-			<td> $170.00</td>
-			<td><img src="E:\proyecto\Especialidad\1.PNG" align="center" width="50%"></td>
-		</tr>
-		<tr>
-			<td>Costillas al horno</td>
-			<td> $140.00</td>
-			<td><img src="E:\proyecto\Especialidad\2.PNG" align="center" width="50%" ></td>
-		</tr>
-		<tr>
-			<td>Costillas braseadas con Champiñones</td>
-			<td> $150.00</td>
-			<td><img src="E:\proyecto\Especialidad\3.jpg" align="center" width="50%"></td>
-		</tr>
-		<tr>
-			<td>Costilla de cerdo al Café</td>
-			<td> $180.00</td>
-			<td><img src="E:\proyecto\Especialidad\4.jpg"  align="center" width="50%"></td>
-		</tr>
-		<tr>
-			<td>Costillas ahumadas estilo Santa Lucia</td>
-			<td> $170.00</td>
-			<td><img src="E:\proyecto\Especialidad\5.jpg" align="center" width="50%"></td>
-		</tr>
-</table>
+      <h1><b>Costilla de cerdo al Café</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$156.50</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <hr>
+
+      <h1><b>Costillas ahumadas estilo Santa Lucia</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$180.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+      <hr>
+
+      <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$171.50</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+    </div>
+</div>
+<div class="slidehow-container">
+	<div class="mySlides fade">
+		<div class="imgprin">
+			<img src="E:\proyecto\Especialidad\3.jpg">
+		</div>
+		<div class="centrado">Costillas braseadas con Champiñones</div>
+	</div>
+	<div class="mySlides fade">
+		<div class="imgprin">
+			<img src="E:\proyecto\Especialidad\4.jpg">
+		</div>
+		<div class="des">Costilla de cerdo al Café</div>
+	</div>
+	<div class="mySlides fade">
+		<div class="imgprin">
+			<img src="E:\proyecto\Especialidad\1.PNG">
+		</div>
+		<div class="des">Costillas de cerdo glaseadas con mermelada de guayaba</div>
+	</div>
+	<div class="mySlides fade">
+		<div class="imgprin">
+			<img src="E:\proyecto\Especialidad\5.jpg">
+		</div>
+		<div class="des">Costillas ahumadas estilo Santa Luciaé</div>
+	</div>
+	<div style="text-align: center;">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+</div>
+<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides(){
+		var 1;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementByClassName("dot");
+		for (var i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}
+			for (var i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 8000);
+	}
+</script>
+	<footer><nav class="p">
+			<h2>Contactanos en costillastlahuishili@gmail.com</h2>
+		</nav></footer>
 </body>
 </html>
