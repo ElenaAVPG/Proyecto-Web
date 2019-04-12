@@ -3,16 +3,200 @@
 <head>
 	<title>Postres</title>
 	<style>
-		
+		footer {
+      background-color: #6E0001;
+    }
+    #logo{
+    	position: relative;
+    	top: -108%;
+    }
+.interior{
+	width: 770px;
+	margin: auto;
+	overflow: hidden;
+}
+.interior ul{
+display: flex;
+padding: 0;
+width: 400%;
 
+animation: cambio 20s infinite;
+animation-direction: alternate;
+}
+
+.interior li{
+	width: 70%;
+	list-style: none;
+}
+.interior img{
+	height: 75%;
+	width: 60%;
+}
+@keyframes cambio{
+	0%{ margin-left: 0; }
+	20%{ margin-left: 0; }
+
+	25%{ margin-left: -100%; }
+	45%{ margin-left: -100%; }
+
+	50%{ margin-left: -200%; }
+	70%{ margin-left: -200%; }
+
+	75%{ margin-left: -300%; }
+	100%{ margin-left: -300%; }
+}
+
+    nav.n{
+background: #6E0001;
+text-align: right; 
+width: 1348px;
+display: inline-block;
+list-style: none;
+}
+nav.n ul.n{
+display:inline-block;
+text-align: center
+}
+nav.n ul.n li.n{
+display: inline-block;
+list-style: none;
+font-size: 20px
+}
+nav.n ul.n li.n a.n{
+text-decoration: none; 
+color: black;
+}
+nav ul li{
+display: table; 
+list-style: none;
+font-size: 20px
+}
+nav ul li a{
+text-decoration: none;
+color: black;
+}
+nav{
+background:#98FB98;
+width: 180px;
+text-align: left;
+}
+nav.p{
+background: #6E0001;
+width: 950px;
+text-align: left;
+clear: both;
+}
+h1.especifico{
+font-family: Impact; 
+color:black;
+text-align: center;
+position: right
+}
+h2{ 
+color:white;
+position: right
+}
+img{
+position:  left
+}
+li:nth-last-of-type(1) a:hover{
+border-bottom: 3px  salmon;
+}
+li:nth-last-of-type(2) a:hover{
+border-bottom: 3px salmon;
+}
+li:nth-last-of-type(3) a:hover{
+border-bottom: 3px salmon;
+}
+li:nth-last-of-type(4) a:hover{
+border-bottom: 3px salmon;
+}
+li:nth-last-of-type(5) a:hover{
+border-bottom: 3px salmon;
+}
+li.espe{
+display: inline-block;
+margin: 0px -2px;
+}
+
+
+*{
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#navegacion{
+		margin: auto;
+		width: 500px;
+	}
+
+	ul, ol{
+		list-style: none;
+	}
+
+	#Lista li a{
+		background: #6E0001;
+		color: white;
+		text-decoration: none;
+		padding:10px 15px;
+		display: block;
+	}
+
+	#Lista > li{
+		float: right;
+	}
+
+	#Lista li a:hover{
+		background: #B0C4DE;
+	}
+
+	#Lista li ul{
+		display: none;
+		position: absolute;
+
+	}
+
+	#Lista li:hover > ul{
+		display: block;
+	}
+
+	<!-- Esta parte es para una lista desplegable dentro de otra lista desplegable-->
+
+	#Lista li ul li{
+		display: none;
+		position: relative;
+
+	}
+
+	#Lista li ul li ul{
+		right: -180px;
+		top: 0px;
+	}
+    h1{
+    	text-align: center;
+    }
+    p{
+    	text-align: center;
+    }
 	</style>
 </head>
 <body background="47.jpg">
-		<img border="0" src="logo.png" width="10%" height="10%" onClick="history.back()">
+		 <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="logo.png" height="150" width="300" id="logo"  > </a>
+    </div>
+	<nav class="n">
+			<ul id="Lista">
+				<li class="espe"><a href="https://twitter.com/login?lang=es" >Acerca de nosotros</a>
+                <li class="espe"><a href="file:///E:/proyecto/Formulario.html">Pedidos</a></li>
+				<li class="espe"><a href="#">Promociones</a></li>
+
+				<li class="espe"><a href="file:///E:/proyecto/Proyecto%20Web.html#">Inicio</a></li>
+        </nav>
 
 <div class="w3-container w3-black">
       <h1>ESPECIALIDAD DE LA CASA</h1>
     </div>
+    <br>
  <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
       <h1><b>Brochetas de Fresa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$45.50</span></h1>
       <p class="w3-text-grey"> Hechas 100% natural</p>
@@ -30,72 +214,56 @@
       <p class="w3-text-grey">Chocolate, vainilla, galleta</p>
       <hr>
 
-      <h1><b>Pay</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$40.00</span></h1>
+      <h1><b>Pay</b> <span class="w3-tag w3-red w3-round">Natural!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$40.00</span></h1>
       <p class="w3-text-grey">Pay de queso</p>
       <hr>
 
     </div>
 </div>
-<div class="slidehow-container">
-	<div class="mySlides fade">
-		<div class="imgprin">
-			<img src="E:\proyecto\Postres\Pay.JPG">
-		</div>
-		<div class="centrado">Pay</div>
+<div class="interior"><h1 class="especifico">Conoce más sobre nosotros</h1>
+		<ul>
+			<li><img src="E:\proyecto\Bebidas\Clericot.jpg" alt=""></li>
+			<li><img src="E:\proyecto\Postres\Helado.jpg" alt=""></li>
+			<li><img src="E:\proyecto\Postres\Carlota.jpg" alt=""></li>
+			<li><img src="E:\proyecto\Platillos\Costillas asadas.jpg" alt=""></li>
+			<li><img src="E:\proyecto\Platillos\Costillas con salsa de barbacoa.jpg" alt=""></li>
+			<li><img src="E:\proyecto\Platillos\Brochetas.jpg"></li>
+		</ul>
 	</div>
-	<div class="mySlides fade">
-		<div class="imgprin">
-			<img src="E:\proyecto\Postres\Helado.jpg">
-		</div>
-		<div class="des">Helado</div>
-	</div>
-	<div class="mySlides fade">
-		<div class="imgprin">
-			<img src="E:\proyecto\Postres\Flan.jpg">
-		</div>
-		<div class="des">Flan</div>
-	</div>
-	<div class="mySlides fade">
-		<div class="imgprin">
-			<img src="E:\proyecto\Postres\Carlota.jpg">
-		</div>
-		<div class="des">Carlota</div>
-	</div>
-	<div class="mySlides fade">
-		<div class="imgprin">
-			<img src="E:\proyecto\Postres\Brochetas de Fresa.jpg">
-		</div>
-		<div class="des">Brochetas de Fresa</div>
-	</div>
-	<div style="text-align: center;">
-		<span class="dot" onclick="currentSlide(1)"></span>
-		<span class="dot" onclick="currentSlide(2)"></span>
-		<span class="dot" onclick="currentSlide(3)"></span>
-	</div>
-</div>
-<script>
-	var slideIndex = 0;
-	showSlides();
+  <br>
+  <br>
 
-	function showSlides(){
-		var 1;
-		var slides = document.getElementsByClassName("mySlides");
-		var dots = document.getElementByClassName("dot");
-		for (var i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-		}
-		slideIndex++;
-		if (slideIndex > slides.length) {slideIndex = 1}
-			for (var i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			}
-			slides[slideIndex-1].style.display = "block";
-			dots[slideIndex-1].className += " active";
-			setTimeout(showSlides, 8000);
-	}
-</script>
-	<footer><nav class="p">
-			<h2>Contactanos en costillastlahuishili@gmail.com</h2>
-		</nav></footer>
+<footer style="background-color: #6E0001; text-decoration:none;color: white;" class="container text-center" >
+  <a name="contacto1"><p style="text-decoration: none; color: white">Acerca de nosotras</p></a>
+  <br>
+<article>
+	<p>
+		Costillas tlahuishili es una pequeña empresa que utiliza alimentos 100% de agricultores Tlaxcaltecas
+	</p>
+</article>
+<div class="container text-center">    
+  <div class="row">
+    <article  class="col-sm-3">
+<a href="https://twitter.com/"><img src="twitter.png" width="70" height="70" ></a> <br><a href="https://www.instagram.com/?hl=es-la"> <img src="ig.png" height="50" width="50"></a>
+</article>
+   <article class="col-sm-3">
+
+      <p>    diseño por Elena Córdova Flores
+    <br>
+    <br>
+    elaborado por Elena Córdova Flores
+  </p>
+    </article>
+       <article class="col-sm-3">
+   </p>
+<p>
+  todos los derechos reservados © <strong>2019 Costillas tlahuishili</strong>
+</p>
+    </article>
+</div>
+
+</footer>
+
+<!-- base de datos -->
 </body>
 </html>
