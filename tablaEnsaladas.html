@@ -2,19 +2,31 @@
 <html>
 <head>
 	<title>Ensaladas</title>
+	<link rel="stylesheet" type="text/css" href="Tablas.css">
 	<style>
 		
 
 	</style>
 </head>
 <body background="48.jpg">
-		<img border="0" src="logo.png" width="10%" height="10%" onClick="history.back()">
-			
-<div class="w3-container w3-black">
-      <h1>ESPECIALIDAD DE LA CASA</h1>
+      <a class="navbar-brand" href="#"><img src="logo.png" height="150" width="300" id="logo"  > </a>
     </div>
+	<nav class="n">
+			<ul id="Lista">
+				<li class="espe"><a href="https://twitter.com/login?lang=es" >Acerca de nosotros</a>
+                <li class="espe"><a href="file:///E:/proyecto/Formulario.html">Pedidos</a></li>
+				<li class="espe"><a href="#">Promociones</a></li>
+
+				<li class="espe"><a href="file:///E:/proyecto/Proyecto%20Web.html#">Inicio</a></li>
+        </nav>
+
+<div class="w3-container w3-black">
+      <h1>ENSALADAS</h1>
+    </div>
+    <br>
+    <br>
  <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Ensalada Griega</b><span class="w3-tag w3-red w3-round">Popular!!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$80.50</span></h1>
+      <h1><b>Ensalada Griega</b><span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$80.50</span></h1>
       <p class="w3-text-grey"> Hechas 100% natural</p>
       <hr>
    
@@ -30,73 +42,57 @@
       <p class="w3-text-grey">Delicioso para los veganos</p>
       <hr>
 
-      <h1><b>Ensalada Agridulce</b> <span class="w3-tag w3-red w3-round">Natural!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$70.00</span></h1>
+      <h1><b>Ensalada Agridulce</b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$70.00</span></h1>
       <p class="w3-text-grey">Ensalada a los que desean probar algo nuevo</p>
       <hr>
 
     </div>
 </div>
-<div class="slidehow-container">
-	<div class="mySlides fade">
-		<div class="imgprin">
-			<img src="C:\Users\DELL\Desktop\Proyecto\proyecto\Ensaladas\Griega.jpg">
-		</div>
-		<div class="centrado">Ensalada Griega</div>
-	</div>
-	<div class="mySlides fade">
-		<div class="imgprin">
-			<img src="E:\proyecto\Ensaladas\Palta.JPG">
-		</div>
-		<div class="des">Ensalada de Manzana y Palta</div>
-	</div>
-	<div class="mySlides fade">
-		<div class="imgprin">
-			<img src="E:\proyecto\Ensaladas\Nicoise.jpg">
-		</div>
-		<div class="des">Ensalada Nicoise</div>
-	</div>
-	<div class="mySlides fade">
-		<div class="imgprin">
-			<img src="E:\proyecto\Ensaladas\Ensalada de atún.JPG">
-		</div>
-		<div class="des">Ensalada de Atún</div>
-	</div>
-	<div class="mySlides fade">
-		<div class="imgprin">
-			<img src="C:\Users\DELL\Desktop\Proyecto\proyecto\Ensaladas\Agridulce.jpg">
-		</div>
-		<div class="des">Ensalada agridulce</div>
-	</div>
-	<div style="text-align: center;">
-		<span class="dot" onclick="currentSlide(1)"></span>
-		<span class="dot" onclick="currentSlide(2)"></span>
-		<span class="dot" onclick="currentSlide(3)"></span>
-	</div>
-</div>
-<script>
-	var slideIndex = 0;
-	showSlides();
 
-	function showSlides(){
-		var 1;
-		var slides = document.getElementsByClassName("mySlides");
-		var dots = document.getElementByClassName("dot");
-		for (var i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-		}
-		slideIndex++;
-		if (slideIndex > slides.length) {slideIndex = 1}
-			for (var i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			}
-			slides[slideIndex-1].style.display = "block";
-			dots[slideIndex-1].className += " active";
-			setTimeout(showSlides, 8000);
-	}
-</script>
-	<footer><nav class="p">
-			<h2>Contactanos en costillastlahuishili@gmail.com</h2>
-		</nav></footer>
+		
+	<div class="interior"><h1 class="especifico">Ensaladas</h1>
+		<ul>
+
+			<li><img src="C:\Users\DELL\Desktop\Proyecto\proyecto\Ensaladas\Griega.jpg" alt=""></li>
+			<li><img src="E:\proyecto\Ensaladas\Palta.JPG" alt=""></li>
+			<li><img src="E:\proyecto\Ensaladas\Nicoise.jpg" alt=""></li>
+			<li><img src="E:\proyecto\Ensaladas\Ensalada de atún.JPG" alt=""></li>
+			<li><img src="C:\Users\DELL\Desktop\Proyecto\proyecto\Ensaladas\Agridulce.jpg"></li>
+		</ul>
+	</div>
+  <br>
+  <br>
+
+<footer style="background-color: #6E0001; text-decoration:none;color: white;" class="container text-center" >
+  <a name="contacto1"><p style="text-decoration: none; color: white">Acerca de nosotras</p></a>
+  <br>
+<article>
+	<p>
+		Costillas tlahuishili es una pequeña empresa que utiliza alimentos 100% de agricultores Tlaxcaltecas
+	</p>
+</article>
+<div class="container text-center">    
+  <div class="row">
+    <article  class="col-sm-3">
+<a href="https://twitter.com/"><img src="twitter.png" width="70" height="70" ></a> <br><a href="https://www.instagram.com/?hl=es-la"> <img src="ig.png" height="50" width="50"></a>
+</article>
+   <article class="col-sm-3">
+
+      <p>    Diseño por Elena Córdova Flores
+    <br>
+    <br>
+    Elaborado por Elena Córdova Flores
+  </p>
+    </article>
+       <article class="col-sm-3">
+   </p>
+<p>
+  Todos los derechos reservados © <strong>2019 Costillas tlahuishili</strong>
+</p>
+    </article>
+</div>
+
+</footer>
 
 </body>
 </html>
